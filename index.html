@@ -14,9 +14,9 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header class="header">
+    <header class="site-header">
     <div class="container">
-    <div class="header__menu">
+    <div class="site-header__menu">
     <nav class="site-nav">
         <a href="/" class="logo"><span class="logo--accent">Web</span>Studio</a>
         <ul class="site-nav__list">
@@ -404,66 +404,64 @@
         </div>
     </footer>
 <!-- MODAL -->
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button type="button" class="modal-button" data-modal-close>
-                <svg width="18" height="18" class="close-icon">
+    <div class="site-backdrop is-hidden" data-modal>
+        <div class="site-modal">
+            <button type="button" class="site-modal__button" data-modal-close>
+                <svg width="18" height="18" class="site-modal__icon">
                     <use href="./images/icons.svg#close"></use>
                 </svg>
             </button>
-            <div class="feedback">
-                <h2 class="feedback-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <div class="site-feedback">
+                <h2 class="site-feedback__title">Оставьте свои данные, мы вам перезвоним</h2>
                 <form>
-                    <div class="feedback-label">
+                    <div class="site-feedback__label">
                     <label>
-                        <p class="feedback-name">Имя</p>
-                    <div class="feedback-field">
-                        <input type="text" name="name" class="feedback-input">
-                        <svg width="18" height="18" class="feedback-icon">
+                        <p class="site-feedback__name">Имя</p>
+                    <div class="site-feedback__field">
+                        <input type="text" name="name" class="site-feedback__input">
+                        <svg width="18" height="18" class="site-feedback__icon">
                             <use href="./images/icons.svg#person"></use>
                         </svg>
                     </div>
                     </label>
                     </div>
-                    <div class="feedback-label">
+                    <div class="site-feedback__label">
                         <label>
-                            <p class="feedback-name">Телефон</p>
-                            <div class="feedback-field">
-                                <input type="tel" name="tel" class="feedback-input">
-                                <svg width="18" height="18" class="feedback-icon">
+                            <p class="site-feedback__name">Телефон</p>
+                            <div class="site-feedback__field">
+                                <input type="tel" name="tel" class="site-feedback__input">
+                                <svg width="18" height="18" class="site-feedback__icon">
                                     <use href="./images/icons.svg#phone"></use>
                                 </svg>
                             </div>
                         </label>
                     </div>
-                    <div class="feedback-label">
+                    <div class="site-feedback__label">
                         <label>
-                            <p class="feedback-name">Почта</p>
-                            <div class="feedback-field">
-                                <input type="email" name="email" class="feedback-input">
-                                <svg width="18" height="18" class="feedback-icon">
+                            <p class="site-feedback__name">Почта</p>
+                            <div class="site-feedback__field">
+                                <input type="email" name="email" class="site-feedback__input">
+                                <svg width="18" height="18" class="site-feedback__icon">
                                     <use href="./images/icons.svg#email"></use>
                                 </svg>
                             </div>
                         </label>
                     </div>
-                    <div class="feedback-label">
+                    <div class="site-feedback__label">
                         <label>
-                            <p class="feedback-name">Коментарии</p>
-                            <div class="feedback-field">
-                                <textarea name="comments" class="feedback-input feedback-textarea" placeholder="Введите текст"></textarea>
+                            <p class="site-feedback__name">Коментарии</p>
+                            <div class="site-feedback__field">
+                                <textarea name="comments" class="site-feedback__input site-feedback__textarea" placeholder="Введите текст"></textarea>
                             </div>
                         </label>
                     </div>
-                    <div class="checkbox-field">
+                    <div class="site-feedback__checkbox-field">
                     <label>
-                            <input type="checkbox" name="checkbox" class="checkbox">
-                            <span class="checkbox-trety">Соглашаюсь с рассылкой и принимаю&nbsp<a href="" class="treaty-link"> Условия договора</a></span>
+                            <input type="checkbox" name="checkbox" class="site-feedback__checkbox">
+                            <span class="site-feedback__trety">Соглашаюсь с рассылкой и принимаю&nbsp<a href="" class="site-feedback__link"> Условия договора</a></span>
                     </label>
                     </div>
-                    <div class="checkbox-button">
-                        <button type="submit" class="form-button">Отправить</button>
-                    </div>
+                        <button type="submit" class="site-feedback__button">Отправить</button>
                 </form>
 
             </div>

@@ -76,11 +76,11 @@ body {
 
 /* =========HEADER */
 
-.header {
+.site-header {
     border-bottom: 1px solid #ECECEC;
 }
 
-.header__menu {
+.site-header__menu {
     display: flex;
     align-items: center;
     margin-right: 93px;
@@ -793,7 +793,7 @@ body {
     
 
     /* MODAL */
-    .backdrop{
+    .site-backdrop{
         position: fixed;
         top: 0;
         left: 0;
@@ -807,7 +807,7 @@ body {
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
-    .backdrop.is-hidden {
+    .site-backdrop.is-hidden {
         opacity: 0;
         pointer-events: none;
         transform: scale(1.1);
@@ -815,7 +815,7 @@ body {
 
     
 
-    .modal {
+    .site-modal {
         
         padding-top: 40px;
         padding-right: 40px;
@@ -836,7 +836,7 @@ body {
      
     }
 
-    .modal-button {
+    .site-modal__button {
         width: 30px;
         height: 30px;
         padding: 0;
@@ -855,7 +855,7 @@ body {
     }
 
   
-    .close-icon {
+    .site-modal__icon {
         display: flex;
         margin-left: auto;
         margin-right: auto;
@@ -866,15 +866,14 @@ body {
         
     }
 
-      .modal-button:hover .close-icon,
-      .modal-button:focus .close-icon {
+      .site-modal__button:hover .site-modal__icon,
+      .site-modal__button:focus .site-modal__icon {
         fill: var(--accent-color);
 
     }
 
-    .feedback {}
 
-    .feedback-title {
+    .site-feedback__title {
         margin-bottom: 12px;
 
         font-weight: 700;
@@ -885,15 +884,15 @@ body {
         color: var(--title-text-color);
     }
 
-    .feedback-label:not(:last-child) {
+    .site-feedback__label:not(:last-child) {
         margin-bottom: 10px;
     }
 
-    .feedback-label:last-child {
+    .site-feedback__label:last-child {
         margin-bottom: 20px;
     }
 
-    .feedback-name {
+    .site-feedback__name {
         margin-bottom: 4px;
 
         font-size: 12px;
@@ -904,14 +903,14 @@ body {
     }
 
 
-    .feedback-field {
+    .site-feedback__field {
         position: relative;
         
     }
 
     
 
-    .feedback-input {
+    .site-feedback__input {
         width: 448px;
         height: 40px;
         padding-left: 42px;
@@ -925,7 +924,7 @@ body {
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .feedback-icon {
+    .site-feedback__icon {
         
         position: absolute;
         top: 12px;
@@ -939,16 +938,16 @@ body {
        
     }
 
-    .feedback-input:focus {
+    .site-feedback__input:focus {
         border: 1px solid var(--accent-color);
        
     }
 
-    .feedback-input:focus + .feedback-icon {
+    .site-feedback__input:focus + .site-feedback__icon {
         fill: var(--accent-color);
     }
 
-    .feedback-textarea {
+    .site-feedback__textarea {
         padding-left: 16px;
         padding-top: 12px;
         padding-bottom: 12px;
@@ -961,7 +960,7 @@ body {
     }
 
 
-    .feedback-textarea::placeholder {
+    .site-feedback__textarea::placeholder {
         font-size: 12px;
         line-height: 1.16;
         letter-spacing: 0.01em;
@@ -969,7 +968,7 @@ body {
         color: rgba(117, 117, 117, 0.5);
     }
 
-    .checkbox-field {
+    .site-feedback__checkbox-field {
         position: relative;
         width: 425px;
         margin-left: auto;
@@ -979,7 +978,7 @@ body {
 
  
 
-    .checkbox {
+    .site-feedback__checkbox {
         width: 1px;
         height: 1px;
         margin: -1px;
@@ -991,16 +990,13 @@ body {
     }
 
 
-    .checkbox-trety {
-        /* position: absolute;
-        top: 0;
-        left: 0; */
+    .site-feedback__trety {
         display: flex;
         line-height: 0.03em;
         align-items: center;
     }
 
-    .checkbox-trety::before {
+    .site-feedback__trety::before {
         content: '';
         width: 16px;
         height: 15px;
@@ -1011,24 +1007,24 @@ body {
         transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .checkbox:checked + .checkbox-trety::before {
+    .site-feedback__checkbox:checked + .site-feedback__trety::before {
         background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2' fill='%232196F3'/%3E%3Cpath d='M3.95703 7.75166L3.88825 7.68604L3.81923 7.75141L2.93123 8.59258L2.85486 8.66492L2.93097 8.73753L6.42671 12.0724L6.49574 12.1382L6.56476 12.0724L14.069 4.91352L14.1449 4.84116L14.069 4.76881L13.1873 3.92764L13.1183 3.86183L13.0493 3.92761L6.49577 10.1735L3.95703 7.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");;
     }
 
-    .treaty-link {
+    .site-feedback__link {
         color: var(--modal-link-color);
     }
 
-    .checkbox-button {
-        
-        text-align: center;
-    }
-
-    .form-button {
+   
+    .site-feedback__button {
+        display: block;
         padding-top: 10px;
         padding-right: 55px;
         padding-bottom: 10px;
         padding-left: 56px;
+
+        margin-left: auto;
+        margin-right: auto;
 
         background-color: var(--modal-buttom-color);
         border: none;
@@ -1047,30 +1043,33 @@ body {
 
   /* PORTFOLIO */
 
-  .portfolio .title {
+  .site-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .site-portfolio__title {
       display: none;
   }
 
-  .portfolio-buttons .list {
-      display: flex;
-      justify-content: center;
-  }
+  .site-portfolio__list {
+    list-style: none;
+    padding-left: 0;
 
-  .portfolio-buttons .list{
-      margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
   }
+  
 
-  .portfolio-buttons .item:not(:last-child){
+  .site-portfolio__item:not(:last-child){
     margin-right: 8px;
   }
 
 
-  .portfolio-items .list {
-      display: flex;
-      flex-wrap: wrap;
-  }
+  
  
-  .btn-portfolio {
+  .site-portfolio__button {
       padding-left: 22px;
       padding-right: 22px;
       padding-top: 6px;
@@ -1096,14 +1095,14 @@ body {
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .btn-portfolio:hover,
-  .btn-portfolio:focus {
+  .site-portfolio__button:hover,
+  .site-portfolio__button:focus {
       color: var(--accent-btn-color);
       background-color: var(--accent-color);
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 
-  .btn-portfolio.selection {
+  .site-portfolio__button--selection {
         color: var(--accent-btn-color);
         background-color: var(--accent-color);
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1111,38 +1110,55 @@ body {
 
   /* PORTFOLIO WORKS */
 
-  .portfolio-work {
-      text-decoration: none;
+  .portfolio-works__list {
+        list-style: none;
+        padding-left: 0;
+
+        display: flex;
+        flex-wrap: wrap;
+  }
+  
+
+  .portfolio-works__link {
+    text-decoration: none;
   }
 
 
 
-  .portfolio-items .item {
+  .portfolio-works__item {
       margin-right: 30px;
       margin-bottom: 30px;
 
       transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .portfolio-items .item:hover,
-  .portfolio-items .item:focus {
+  .portfolio-works__item:hover,
+  .portfolio-works__item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-    .portfolio-items .item:nth-child(3n){
+   .portfolio-works__item:nth-child(3n){
         margin-right: 0;
     }
 
-    .portfolio-items .item:nth-last-child(-n+3){
+    .portfolio-works__item:nth-last-child(-n+3){
         margin-bottom: 0;
     }
   
 
-  .portfolio-work .photo {
+  .portfolio-works__photo {
       display: block;
   }
 
-  .portfolio-work .frame{
+    .portfolio-works__overlay {
+      width: 370px;
+      height: 294px;
+      position: relative;
+
+      overflow: hidden;
+  }
+
+  .portfolio-works__frame{
       border-left: 1px solid #EEEEEE;
       border-right: 1px solid #EEEEEE;
       border-bottom: 1px solid #EEEEEE;
@@ -1153,7 +1169,7 @@ body {
       padding-bottom: 20px;
   }
 
-  .portfolio-title {
+  .portfolio-works__title {
       color: var(--title-text-color);
 
       font-weight: 700;
@@ -1162,14 +1178,14 @@ body {
       letter-spacing: 0.06em;
   }
 
-  .portfolio-text {
+  .portfolio-works__text {
       color: var(--primary-text-color);
 
       font-size: 16px;
       line-height: 1.88;
   }
 
-  .portfolio-overlay {
+  .portfolio-works__block {
       width: 370px;
       height: 294px;
       padding-top: 63px;
@@ -1194,15 +1210,9 @@ body {
 
 
  }
- .portfolio-work:hover .portfolio-overlay {
+ .portfolio-works__link:hover .portfolio-works__block {
      transform: translateY(0%);
  }
   
-  .overlay-hidden {
-    width: 370px;
-    height: 294px;
-    position: relative;
-
-    overflow: hidden;
-  }
+  
 
