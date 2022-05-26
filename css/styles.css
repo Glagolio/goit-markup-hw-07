@@ -65,6 +65,14 @@ body {
     display: flex;
 }
 
+ /* SECTION */
+
+
+ .section {
+     padding-top: 94px;
+     padding-bottom: 94px;
+ }
+
 
 /* =========HEADER */
 
@@ -291,13 +299,7 @@ body {
 
 
 
-    /* SECTION */
-
-
-    .section {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
+   
 
     /* BENEFITS */
 
@@ -556,7 +558,12 @@ body {
    
 
   /* CLIENTS */
-  .clients .title{
+
+  .site-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .site-clients__title{
         color: var(--title-text-color);
         font-weight: 700;
         font-size: 36px;
@@ -564,16 +571,20 @@ body {
         text-align: center;
   }
 
-  .clients .list {
-      display: flex;
-      margin-top: 50px;
+  .site-clients__list {
+    padding-left: 0;
+    margin-top: 50px;
+
+    display: flex;
+
+    list-style: none;
   }
 
-  .client-list:not(:last-child) {
+  .site-clients__item:not(:last-child) {
       margin-right: 30px;
   }
 
-  .link-client {
+  .site-clients__link {
       display: inline-flex;
       width: 170px;
       height: 92px;
@@ -584,13 +595,13 @@ body {
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
   }
 
-  .link-client:hover,
-  .link-client:focus {
+  .site-clients__link:hover,
+  .site-clients__link:focus {
       border-color: var(--accent-color);
       fill: var(--accent-color);
   }
 
-  .icon-client {
+  .site-clients__icon {
       
       margin-top: auto;
       margin-bottom: auto;
