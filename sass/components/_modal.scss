@@ -215,7 +215,7 @@
 
                 transition: border $animation, background-color $animation;
 
-             .site-feedback__checkbox:focus + & {
+             .site-feedback__checkbox:checked + & {
                 border: 2px solid #2196F3;
                 background-color: #2196F3;
             }
@@ -261,3 +261,5 @@
         }
         
     }
+
+    
