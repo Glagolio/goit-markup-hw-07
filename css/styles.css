@@ -61,9 +61,7 @@ body {
     padding-left: 0;
 }
 
-.flex {
-    display: flex;
-}
+
 
  /* SECTION */
 
@@ -513,14 +511,7 @@ body {
    }
 
 
-   .social {
-        list-style: none;
-        padding-left: 0;
-       display: flex;
-       margin-left: 32px;
-
-   }
-
+ 
 
    .site-social__list:not(:last-child) {
     margin-right: 10px;
